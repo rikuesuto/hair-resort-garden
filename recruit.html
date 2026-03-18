@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スタッフ募集 | Hair Resort Garden 南柏店・CALM</title>
+<meta name="description" content="千葉県柏市南柏の美容室「Hair Resort Garden」では、南柏店・CALMともにスタイリスト・アシスタントを募集しています。アットホームな職場で一緒に働きませんか？">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="photo/logo_suma.png" />
+<link rel="apple-touch-icon" href="photo/logo_suma.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Zen+Kaku+Gothic+New:wght@300;400&family=Cinzel:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Zen+Kaku+Gothic+New:wght@300;400&family=Cinzel:wght@400;500&display=swap"></noscript>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8YB2P51D02"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8YB2P51D02');
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --white:      #FEFCF8;
+  --ivory:      #F6F2E8;
+  --cream:      #EDE5D4;
+  --sage-pale:  #DFF0E6;
+  --sage-lt:    #B2D4BC;
+  --sage:       #7AAD8A;
+  --moss:       #547E65;
+  --forest-lt:  #3A7055;
+  --forest-md:  #2A5440;
+  --forest:     #1E3D2C;
+  --gold:       #B09050;
+  --gold-lt:    #C8AA6E;
+  --bark:       #3A2A1C;
+  --text-main:  #2C2218;
+  --text-mid:   #5A4E40;
+  --text-soft:  #8A7E72;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  background: var(--ivory);
+  color: var(--text-main);
+  font-weight: 300;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0 2rem; height: 64px;
+  background: rgba(254,252,248,0.96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(30,61,44,0.1);
+  box-shadow: 0 1px 20px rgba(30,61,44,0.06);
+}
+.nav-logo {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem; letter-spacing: 0.18em;
+  color: var(--forest); text-decoration: none;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.nav-links { display: flex; gap: 0; list-style: none; align-items: center; }
+.nav-links li a {
+  font-family: 'Cinzel', serif;
+  font-size: 0.63rem; letter-spacing: 0.15em;
+  color: var(--text-mid); text-decoration: none;
+  padding: 0 1.2rem; text-transform: uppercase;
+  transition: color 0.2s;
+  display: block; height: 64px; line-height: 64px;
+  border-left: 1px solid rgba(30,61,44,0.08);
+}
+.nav-links li a:hover { color: var(--forest-lt); }
+.nav-links li:last-child a { border-right: 1px solid rgba(30,61,44,0.08); }
+.nav-active { color: var(--forest) !important; font-weight: 400; }
+.nav-cta { background: var(--forest) !important; color: var(--ivory) !important; }
+.nav-cta:hover { background: var(--forest-lt) !important; }
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--forest); transition: transform 0.3s, opacity 0.3s; }
+.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; z-index: 190; background: rgba(254,252,248,0.98); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(30,61,44,0.1); flex-direction: column; padding: 1rem 0; box-shadow: 0 8px 24px rgba(30,61,44,0.1); }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-family: 'Cinzel', serif; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; padding: 1rem 2rem; border-bottom: 1px solid rgba(30,61,44,0.06); transition: background 0.2s, color 0.2s; }
+.mobile-menu a:hover { background: var(--sage-pale); color: var(--forest); }
+.mobile-menu a.mobile-cta { margin: 0.8rem 2rem 0.4rem; background: var(--forest); color: var(--ivory) !important; text-align: center; border: none; }
+
+/* ── HERO ── */
+.hero {
+  padding: 9rem 2rem 5rem;
+  background: var(--white);
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 65% at 15% 85%, rgba(90,140,100,0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 55% at 88% 15%, rgba(178,212,188,0.14) 0%, transparent 58%);
+}
+.hero-dots {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0.32;
+  background-image: radial-gradient(circle, rgba(90,140,100,0.25) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 80%);
+}
+.hero-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 0.66rem; letter-spacing: 0.4em; color: var(--gold);
+  margin-bottom: 1.4rem;
+  display: flex; align-items: center; justify-content: center; gap: 0.9rem;
+  opacity: 0; animation: fadeUp 0.9s 0.2s forwards;
+}
+.ey-line { width: 40px; height: 1px; background: var(--gold); opacity: 0.5; display: inline-block; }
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 300;
+  line-height: 1.1; letter-spacing: 0.05em; color: var(--forest);
+  margin-bottom: 0.3em;
+  opacity: 0; animation: fadeUp 1s 0.38s forwards;
+}
+.hero-title em { font-style: italic; color: var(--forest-lt); }
+.hero-sub {
+  font-size: 0.85rem; letter-spacing: 0.14em; color: var(--text-soft);
+  margin-bottom: 0.5rem;
+  opacity: 0; animation: fadeUp 1s 0.55s forwards;
+}
+.hero-lead {
+  font-size: 0.9rem; line-height: 2; color: var(--text-mid);
+  max-width: 560px; margin: 1.4rem auto 0;
+  opacity: 0; animation: fadeUp 1s 0.7s forwards;
+}
+
+/* ── SHARED ── */
+.sec-ey {
+  font-family: 'Cinzel', serif;
+  font-size: 0.64rem; letter-spacing: 0.34em; color: var(--gold);
+  text-transform: uppercase; margin-bottom: 1rem;
+  display: flex; align-items: center; gap: 0.7rem;
+}
+.sec-ey::before { content:''; display:inline-block; width:20px; height:1px; background:var(--gold); opacity:0.6; }
+.sec-ey.center { justify-content: center; }
+.sec-ey.center::before { display: none; }
+.sec-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 300;
+  color: var(--forest); line-height: 1.2; margin-bottom: 1.2rem;
+}
+.leaf-rule { display:flex; align-items:center; gap:0.6rem; margin:1rem 0 1.6rem; }
+.leaf-rule-ln { width:20px; height:1px; background:rgba(90,140,100,0.35); display:inline-block; }
+
+/* ── APPEAL ── */
+.appeal {
+  background: var(--forest);
+  padding: 5rem 2rem;
+  position: relative; overflow: hidden;
+}
+.appeal::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 12px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 12px);
+}
+.appeal-inner {
+  max-width: 1000px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 0;
+  border: 1px solid rgba(255,255,255,0.08);
+  position: relative; z-index: 1;
+}
+.appeal-item {
+  padding: 2.8rem 2.2rem; text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+.appeal-item:last-child { border-right: none; }
+.appeal-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem; font-weight: 300; color: var(--sage-lt);
+  line-height: 1; margin-bottom: 0.8rem; letter-spacing: 0.04em;
+}
+.appeal-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-weight: 400; color: var(--ivory);
+  letter-spacing: 0.06em; margin-bottom: 0.7rem;
+}
+.appeal-desc { font-size: 0.8rem; color: rgba(245,241,232,0.6); line-height: 1.9; }
+
+/* ── JOB CARDS ── */
+.jobs {
+  background: var(--white); padding: 6rem 2rem;
+  position: relative; overflow: hidden;
+}
+.jobs::before {
+  content: ''; position: absolute; top: 0; right: 0; width: 280px; height: 280px; pointer-events: none;
+  background-image: repeating-linear-gradient(-45deg, rgba(90,140,100,0.06) 0px, rgba(90,140,100,0.06) 1px, transparent 1px, transparent 9px);
+  mask-image: radial-gradient(ellipse 80% 80% at 100% 0%, black, transparent);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 100% 0%, black, transparent);
+}
+.jobs-hd { text-align: center; margin-bottom: 3.5rem; }
+.jobs-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; position: relative; z-index: 1; }
+
+.job-card {
+  background: var(--white);
+  border: 1px solid rgba(30,61,44,0.1);
+  padding: 3rem;
+  position: relative; overflow: hidden;
+  box-shadow: 0 4px 28px rgba(30,61,44,0.06);
+}
+.job-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(to right, var(--forest-md), var(--sage));
+}
+.job-card::after {
+  content: ''; position: absolute; bottom: 0; right: 0; width: 100px; height: 100px; pointer-events: none;
+  background-image: repeating-linear-gradient(-45deg, rgba(90,140,100,0.06) 0px, rgba(90,140,100,0.06) 1px, transparent 1px, transparent 8px);
+  mask-image: radial-gradient(ellipse 80% 80% at 100% 100%, black, transparent);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 100% 100%, black, transparent);
+}
+.job-badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.2em;
+  color: var(--forest-lt); border: 1px solid rgba(30,61,44,0.2);
+  padding: 0.32rem 0.85rem; margin-bottom: 1.4rem; background: var(--sage-pale);
+}
+.job-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem; font-weight: 300; color: var(--forest);
+  letter-spacing: 0.04em; line-height: 1.2; margin-bottom: 1.6rem;
+}
+.job-table { width: 100%; border-collapse: collapse; }
+.job-table tr { border-bottom: 1px solid rgba(30,61,44,0.08); }
+.job-table td { padding: 0.85rem 0; font-size: 0.84rem; line-height: 1.85; vertical-align: top; }
+.job-table td:first-child {
+  font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.13em;
+  color: var(--forest-lt); width: 34%; padding-right: 0.8rem;
+}
+.job-table td:last-child { color: var(--text-mid); }
+.job-divider { width: 32px; height: 1px; background: rgba(90,140,100,0.35); margin: 1.4rem 0; }
+
+/* ── FLOW ── */
+.flow { background: var(--ivory); padding: 6rem 2rem; position: relative; overflow: hidden; }
+.flow::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(90,140,100,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(90,140,100,0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.flow-hd { text-align: center; margin-bottom: 3.5rem; }
+.flow-steps {
+  max-width: 700px; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 0;
+  position: relative; z-index: 1;
+}
+.flow-step {
+  display: flex; align-items: flex-start; gap: 2rem;
+  padding: 2rem 2.5rem;
+  background: var(--white); border: 1px solid rgba(30,61,44,0.1);
+  border-bottom: none;
+  position: relative;
+}
+.flow-step:first-child { border-radius: 0; }
+.flow-step:last-child { border-bottom: 1px solid rgba(30,61,44,0.1); }
+.flow-step::before {
+  content: ''; position: absolute; left: 68px; bottom: -18px;
+  width: 1px; height: 18px; background: rgba(90,140,100,0.4); z-index: 1;
+}
+.flow-step:last-child::before { display: none; }
+.flow-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem; font-weight: 300; color: var(--sage);
+  line-height: 1; flex-shrink: 0; width: 40px; text-align: center;
+}
+.flow-content {}
+.flow-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-weight: 400; color: var(--forest);
+  letter-spacing: 0.05em; margin-bottom: 0.4rem;
+}
+.flow-desc { font-size: 0.83rem; color: var(--text-mid); line-height: 1.9; }
+
+/* ── CTA ── */
+.cta {
+  background: var(--forest); padding: 6rem 2rem; text-align: center;
+  position: relative; overflow: hidden;
+}
+.cta::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 12px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 12px);
+}
+.cta::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 70% 70% at 50% 50%, rgba(58,112,85,0.35), transparent 70%);
+}
+.cta-inner { position: relative; z-index: 1; }
+.cta-ey { font-family:'Cinzel',serif; font-size:0.66rem; letter-spacing:0.34em; color:rgba(200,170,110,0.75); display:block; margin-bottom:1.2rem; }
+.cta-title { font-family:'Cormorant Garamond',serif; font-size:clamp(1.9rem,4vw,3rem); font-weight:300; color:var(--ivory); line-height:1.3; margin-bottom:0.8rem; }
+.cta-title em { font-style:italic; color:var(--sage-lt); }
+.cta-desc { font-size:0.85rem; color:rgba(255,255,255,0.5); line-height:2; margin-bottom:2.6rem; }
+.cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.btn-cta {
+  font-family:'Cinzel',serif; font-size:0.64rem; letter-spacing:0.2em; text-transform:uppercase;
+  padding:1.1rem 2.4rem; text-decoration:none;
+  border:1px solid rgba(255,255,255,0.3); color:var(--ivory); background:rgba(255,255,255,0.07);
+  transition:background 0.3s, border-color 0.3s;
+}
+.btn-cta:hover { background:rgba(255,255,255,0.16); border-color:rgba(255,255,255,0.55); }
+.btn-cta.primary { background: rgba(178,212,188,0.2); border-color: var(--sage-lt); }
+.btn-cta.primary:hover { background: rgba(178,212,188,0.35); }
+
+/* ── FOOTER ── */
+footer { background: var(--bark); border-top: 1px solid rgba(200,170,110,0.15); text-align: center; padding: 2.8rem 2rem; position: relative; overflow: hidden; }
+footer::before { content: ''; position: absolute; inset: 0; pointer-events: none; background-image: repeating-linear-gradient(-45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 10px); }
+.footer-logo { font-family:'Cinzel',serif; font-size:0.85rem; letter-spacing:0.24em; color:rgba(200,170,110,0.65); display:block; margin-bottom:0.6rem; position:relative; z-index:1; }
+.footer-links { display:flex; justify-content:center; gap:1.6rem; list-style:none; margin-bottom:1.2rem; flex-wrap:wrap; position:relative; z-index:1; }
+.footer-links a { font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.14em; color:rgba(178,212,188,0.35); text-decoration:none; transition:color 0.2s; }
+.footer-links a:hover { color:var(--sage-lt); }
+.footer-sep { color:rgba(200,170,110,0.2); }
+.footer-copy { font-size:0.58rem; letter-spacing:0.12em; color:rgba(200,170,110,0.2); position:relative; z-index:1; }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn  { from { opacity:0; } to { opacity:1; } }
+.reveal { opacity:0; transform:translateY(22px); transition:opacity 0.9s ease, transform 0.9s ease; }
+.reveal.visible { opacity:1; transform:translateY(0); }
+.reveal-d { transition-delay: 0.15s; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { padding: 0 1.4rem; height: 60px; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .mobile-menu { top: 60px; }
+  .appeal-inner { grid-template-columns: 1fr; }
+  .appeal-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding: 2.2rem 1.6rem; }
+  .appeal-item:last-child { border-bottom: none; }
+  .jobs-grid { grid-template-columns: 1fr; }
+  .job-card { padding: 2.2rem 1.5rem; }
+  .flow-step { padding: 1.6rem 1.4rem; gap: 1.2rem; }
+  .cta-btns { flex-direction: column; align-items: center; }
+  .btn-cta { width: 100%; max-width: 280px; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="photo/logo.png" width="36" height="36" alt="南柏の美容室 Hair Resort Gardenのロゴ" style="display:block;">
+    Hair Resort Garden
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#gallery">Gallery</a></li>
+    <li><a href="index.html#stores">店舗案内</a></li>
+    <li><a href="recruit.html" class="nav-active">求人情報</a></li>
+    <li><a href="index.html#stores" class="nav-cta">ネット予約</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="index.html#gallery" onclick="closeMenu()">Gallery</a>
+  <a href="index.html#stores" onclick="closeMenu()">店舗案内</a>
+  <a href="recruit.html" onclick="closeMenu()">求人情報</a>
+  <a href="index.html#stores" class="mobile-cta">ネット予約</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-dots"></div>
+  <p class="hero-eyebrow"><span class="ey-line"></span>Recruit<span class="ey-line"></span></p>
+  <h1 class="hero-title">一緒に働く<br><em>仲間を募集中</em></h1>
+  <p class="hero-sub">Hair Resort Garden 南柏店・CALM</p>
+  <p class="hero-lead">
+    お客様に寄り添い、髪の美しさを一緒に追求してくれるスタッフを募集しています。<br>
+    アットホームな環境で、技術もキャリアも着実に成長できます。
+  </p>
+</section>
+
+<!-- APPEAL -->
+<div class="appeal reveal">
+  <div class="appeal-inner">
+    <div class="appeal-item">
+      <p class="appeal-num">01</p>
+      <p class="appeal-title">充実した技術環境</p>
+      <p class="appeal-desc">TOKIO・サイエンスアクア・イルミナカラーなどエリアトップクラスのトリートメントラインナップ。最新技術を日々の仕事で学べます。</p>
+    </div>
+    <div class="appeal-item">
+      <p class="appeal-num">02</p>
+      <p class="appeal-title">アットホームな職場</p>
+      <p class="appeal-desc">少人数のチームで、スタッフ同士の距離が近く働きやすい環境です。困ったことはいつでも相談できる雰囲気を大切にしています。</p>
+    </div>
+    <div class="appeal-item">
+      <p class="appeal-num">03</p>
+      <p class="appeal-title">南柏駅すぐの好立地</p>
+      <p class="appeal-desc">南柏駅東口より徒歩1〜3分。通勤しやすい立地で、プライベートとの両立もしやすい環境です。</p>
+    </div>
+  </div>
+</div>
+
+<!-- JOB CARDS -->
+<section class="jobs">
+  <div class="jobs-hd reveal">
+    <span class="sec-ey center">Job Openings</span>
+    <h2 class="sec-title">募集職種</h2>
+  </div>
+  <div class="jobs-grid">
+
+    <!-- スタイリスト -->
+    <div class="job-card reveal">
+      <div class="job-badge">
+        <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M4 1 Q7 3 6 5.5 Q5 7.5 4 7.5 Q3 7.5 2 5.5 Q1 3 4 1Z" fill="#3A7055"/></svg>
+        正社員 / パート
+      </div>
+      <h2 class="job-title">スタイリスト</h2>
+      <div class="job-divider"></div>
+      <table class="job-table">
+        <tr><td>勤務地</td><td>南柏店 または CALM<br><span style="font-size:0.78rem;color:var(--text-soft)">希望考慮します</span></td></tr>
+        <tr><td>給与</td><td>要相談<br><span style="font-size:0.78rem;color:var(--text-soft)">経験・スキルを考慮</span></td></tr>
+        <tr><td>勤務時間</td><td>シフト制<br><span style="font-size:0.78rem;color:var(--text-soft)">週3日〜相談可</span></td></tr>
+        <tr><td>休日</td><td>週休2日<br><span style="font-size:0.78rem;color:var(--text-soft)">シフトによる</span></td></tr>
+        <tr><td>応募条件</td><td>美容師免許取得者<br>経験者優遇（未経験相談可）</td></tr>
+        <tr><td>待遇</td><td>社会保険完備<br>技術研修あり・交通費支給</td></tr>
+      </table>
+    </div>
+
+    <!-- アシスタント -->
+    <div class="job-card reveal reveal-d">
+      <div class="job-badge">
+        <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M4 1 Q7 3 6 5.5 Q5 7.5 4 7.5 Q3 7.5 2 5.5 Q1 3 4 1Z" fill="#B09050"/></svg>
+        正社員 / パート
+      </div>
+      <h2 class="job-title">アシスタント</h2>
+      <div class="job-divider"></div>
+      <table class="job-table">
+        <tr><td>勤務地</td><td>南柏店 または CALM<br><span style="font-size:0.78rem;color:var(--text-soft)">希望考慮します</span></td></tr>
+        <tr><td>給与</td><td>要相談<br><span style="font-size:0.78rem;color:var(--text-soft)">経験・スキルを考慮</span></td></tr>
+        <tr><td>勤務時間</td><td>シフト制<br><span style="font-size:0.78rem;color:var(--text-soft)">週3日〜相談可</span></td></tr>
+        <tr><td>休日</td><td>週休2日<br><span style="font-size:0.78rem;color:var(--text-soft)">シフトによる</span></td></tr>
+        <tr><td>応募条件</td><td>美容師免許取得（見込み可）<br>未経験・新卒歓迎</td></tr>
+        <tr><td>待遇</td><td>社会保険完備<br>技術研修あり・交通費支給</td></tr>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="flow">
+  <div class="flow-hd reveal">
+    <span class="sec-ey center">Application Flow</span>
+    <h2 class="sec-title">応募の流れ</h2>
+  </div>
+  <div class="flow-steps reveal">
+    <div class="flow-step">
+      <span class="flow-num">1</span>
+      <div class="flow-content">
+        <p class="flow-title">お問い合わせ</p>
+        <p class="flow-desc">下記の「応募・問い合わせ」ボタンよりLINEまたはお電話でご連絡ください。まずはお気軽にどうぞ。</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <span class="flow-num">2</span>
+      <div class="flow-content">
+        <p class="flow-title">面接日程の調整</p>
+        <p class="flow-desc">ご都合に合わせて面接日程を調整します。来店が難しい場合はオンライン面接も対応可能です。</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <span class="flow-num">3</span>
+      <div class="flow-content">
+        <p class="flow-title">面接・サロン見学</p>
+        <p class="flow-desc">実際にサロンの雰囲気を見ていただきながら、お互いのことを話しましょう。技術チェックは状況に応じて行います。</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <span class="flow-num">4</span>
+      <div class="flow-content">
+        <p class="flow-title">採用・入社日決定</p>
+        <p class="flow-desc">面接後、1週間以内にご連絡します。入社日はご都合に合わせて柔軟に対応します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+  <div class="cta-inner">
+    <span class="cta-ey">Contact</span>
+    <h2 class="cta-title">まずはお気軽に<br><em>お問い合わせください</em></h2>
+    <p class="cta-desc">
+      「話を聞くだけ」「見学だけ」も大歓迎です。<br>
+      LINEまたはお電話よりお気軽にご連絡ください。
+    </p>
+    <div class="cta-btns">
+      <a href="tel:047-161-3534" class="btn-cta primary">南柏店に電話する<br><span style="font-size:0.8em;letter-spacing:0.1em;">047-161-3534</span></a>
+      <a href="tel:04-7197-1775" class="btn-cta primary">CALMに電話する<br><span style="font-size:0.8em;letter-spacing:0.1em;">04-7197-1775</span></a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Hair Resort Garden</span>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="footer-sep">|</li>
+    <li><a href="index.html#gallery">Gallery</a></li>
+    <li class="footer-sep">|</li>
+    <li><a href="index.html#stores">南柏店</a></li>
+    <li class="footer-sep">|</li>
+    <li><a href="index.html#calm">CALM</a></li>
+    <li class="footer-sep">|</li>
+    <li><a href="recruit.html">求人情報</a></li>
+  </ul>
+  <p class="footer-copy">&copy; 2026 Hair Resort Garden. All rights reserved.</p>
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    btn.classList.toggle('open', open);
+  });
+  function closeMenu() {
+    menu.classList.remove('open');
+    btn.classList.remove('open');
+  }
+  document.addEventListener('click', (e) => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) closeMenu();
+  });
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => io.observe(el));
+</script>
+</body>
+</html>
