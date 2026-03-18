@@ -54,9 +54,12 @@
   "sameAs": ["https://beauty.hotpepper.jp/slnH000606367/"]
 }
 </script>
+<link rel="icon" href="photo/logo_suma.png" />
+<link rel="apple-touch-icon" href="photo/logo_suma.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Zen+Kaku+Gothic+New:wght@300;400&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Zen+Kaku+Gothic+New:wght@300;400&family=Cinzel:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Zen+Kaku+Gothic+New:wght@300;400&family=Cinzel:wght@400;500&display=swap"></noscript>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -614,11 +617,12 @@ footer::before {
 </script>
 </head>
 <body>
+<main>
 
 <!-- ══ NAV ══ -->
 <nav>
   <a href="#" class="nav-logo">
-    <img src="photo/logo.png" height="36" alt="南柏の美容室 Hair Resort Gardenのロゴ" style="display:block;">
+    <img src="photo/logo.png" width="36" height="36" alt="南柏の美容室 Hair Resort Gardenのロゴ" style="display:block;">
     Hair Resort Garden 南柏店 &amp; CALM
   </a>
   <!-- Desktop links -->
@@ -681,7 +685,7 @@ footer::before {
     <circle cx="88" cy="6" r="5" fill="#7AAD8A" stroke="#2A5440" stroke-width="0.9"/>
   </svg>
 
-  <img src="photo/logo.png" alt="南柏の美容室 Hair Resort Gardenのロゴ" style="height:180px;margin-bottom:1.6rem;opacity:0;animation:fadeIn 1s 0.2s forwards;">
+  <img src="photo/logo.png" width="180" height="180" alt="南柏の美容室 Hair Resort Gardenのロゴ" style="height:180px;margin-bottom:1.6rem;opacity:0;animation:fadeIn 1s 0.2s forwards;">
   <p class="hero-eyebrow"><span class="ey-line"></span>Hair Salon<span class="ey-line"></span></p>
   <h1 class="hero-title">Hair Resort<br><em>Garden</em><br><span style="font-size:0.45em;letter-spacing:0.12em;color:var(--forest-lt);font-family:'Cinzel',serif;font-style:normal;">南柏店 &amp; CALM</span></h1>
   <p class="hero-kana">ヘアリゾートガーデン</p>
@@ -720,7 +724,7 @@ footer::before {
   <div class="concept-inner">
     <div class="concept-img-col">
       <!-- ▼ <img src="images/concept.jpg" alt="サロン内観"> に差し替え -->
-      <img src="photo/gazou7.jpg" alt="Hair Resort Gardenの明るく清潔感あるスタイリングスペース" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img src="photo/gazou7.jpg" alt="Hair Resort Gardenの明るく清潔感あるスタイリングスペース" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div>
     <div class="concept-txt">
       <span class="sec-ey">Our Concept</span>
@@ -782,19 +786,19 @@ footer::before {
   <div class="gallery-grid reveal">
     <div class="g-item"><div class="g-frame">
       <!-- <img src="photos/main.jpg" alt="スタイル"> に差し替え -->
-      <img src="photo/gazou.jpg" alt="南柏の美容室 Hair Resort Gardenのミディアムパーマスタイル" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img src="photo/gazou.jpg" alt="南柏の美容室 Hair Resort Gardenのミディアムパーマスタイル" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div><div class="g-overlay"><span class="g-pill">Feature</span></div></div>
     <div class="g-item"><div class="g-frame">
-      <img src="photo/gazou3.jpg" alt="Hair Resort Gardenのイルミナカラー・ボブパーマスタイル" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img src="photo/gazou3.jpg" alt="Hair Resort Gardenのイルミナカラー・ボブパーマスタイル" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div><div class="g-overlay"><span class="g-pill">Color</span></div></div>
     <div class="g-item"><div class="g-frame">
-      <img src="photo/gazou4.jpg" alt="Hair Resort Gardenの似合わせボブカットスタイル" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img src="photo/gazou4.jpg" alt="Hair Resort Gardenの似合わせボブカットスタイル" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div><div class="g-overlay"><span class="g-pill">Cut</span></div></div>
     <div class="g-item"><div class="g-frame">
-      <img src="photo/gazou2.jpg" alt="Hair Resort Gardenの黒髪ボブパーマスタイル" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img src="photo/gazou2.jpg" alt="Hair Resort Gardenの黒髪ボブパーマスタイル" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div><div class="g-overlay"><span class="g-pill">Perm</span></div></div>
     <div class="g-item"><div class="g-frame">
-      <img src="photo/gazou9.jpg" alt="Hair Resort Gardenの髪質改善トリートメント後のツヤツヤロングヘア" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img src="photo/gazou9.jpg" alt="Hair Resort Gardenの髪質改善トリートメント後のツヤツヤロングヘア" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div><div class="g-overlay"><span class="g-pill">Treatment</span></div></div>
   </div>
 </section>
@@ -826,7 +830,7 @@ footer::before {
       </table>
       <div class="store-divider"></div>
       <div class="store-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.245793090426!2d139.9510671763856!3d35.84297612107084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189daee7464571%3A0x2405665281397fef!2zSGFpciBSZXNvcnQgR2FyZGVu5Y2X5p-P5bqX!5e0!3m2!1sja!2sus!4v1773859958831!5m2!1sja!2sus" width="100%" height="200" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Hair Resort Garden 南柏店の地図" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.245793090426!2d139.9510671763856!3d35.84297612107084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189daee7464571%3A0x2405665281397fef!2zSGFpciBSZXNvcnQgR2FyZGVu5Y2X5p-P5bqX!5e0!3m2!1sja!2sus!4v1773859958831!5m2!1sja!2sus" width="100%" height="200" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <a href="https://beauty.hotpepper.jp/slnH000423556/" target="_blank" class="btn-reserve-store">南柏店を予約する</a>
     </div>
@@ -849,7 +853,7 @@ footer::before {
       </table>
       <div class="store-divider"></div>
       <div class="store-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.245793090426!2d139.9510671763856!3d35.84297612107084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189dd54355cb9b%3A0x7c055acf9b43139a!2sHair%20Resort%20Garden%20CALM!5e0!3m2!1sja!2sus!4v1773859999458!5m2!1sja!2sus" width="100%" height="200" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Hair Resort Garden CALMの地図" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.245793090426!2d139.9510671763856!3d35.84297612107084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189dd54355cb9b%3A0x7c055acf9b43139a!2sHair%20Resort%20Garden%20CALM!5e0!3m2!1sja!2sus!4v1773859999458!5m2!1sja!2sus" width="100%" height="200" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <a href="https://beauty.hotpepper.jp/slnH000606367/" target="_blank" class="btn-reserve-store">CALMを予約する</a>
     </div>
@@ -870,6 +874,7 @@ footer::before {
 </div>
 
 <!-- ══ FOOTER ══ -->
+</main>
 <footer>
   <span class="footer-logo">Hair Resort Garden</span>
   <ul class="footer-links">
