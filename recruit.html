@@ -319,6 +319,37 @@ nav {
 .btn-cta:hover { background:rgba(255,255,255,0.16); border-color:rgba(255,255,255,0.55); }
 .btn-cta.primary { background: rgba(178,212,188,0.2); border-color: var(--sage-lt); }
 .btn-cta.primary:hover { background: rgba(178,212,188,0.35); }
+.btn-line {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+  font-family:'Cinzel',serif; font-size:0.64rem; letter-spacing:0.18em; text-transform:uppercase;
+  padding:1.1rem 2.4rem; text-decoration:none;
+  background: #06C755; color: #fff;
+  border: 1px solid #06C755;
+  transition: background 0.3s, opacity 0.3s;
+}
+.btn-line:hover { opacity: 0.85; }
+.btn-line img { width: 20px; height: 20px; border-radius: 4px; }
+.line-float {
+  position: fixed; bottom: 24px; right: 20px; z-index: 999;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.line-float a {
+  display: flex; align-items: center; justify-content: center;
+  width: 56px; height: 56px;
+  background: #06C755; border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+.line-float a:hover { transform: scale(1.08); box-shadow: 0 6px 20px rgba(0,0,0,0.24); }
+.line-float a img { width: 32px; height: 32px; }
+.line-float-label {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 0.56rem; letter-spacing: 0.08em;
+  color: var(--text-soft); text-align: center;
+  background: rgba(254,252,248,0.9);
+  padding: 2px 6px; border-radius: 4px;
+}
 
 /* ── FOOTER ── */
 footer { background: var(--bark); border-top: 1px solid rgba(200,170,110,0.15); text-align: center; padding: 2.8rem 2rem; position: relative; overflow: hidden; }
@@ -513,11 +544,22 @@ footer::before { content: ''; position: absolute; inset: 0; pointer-events: none
     <div class="cta-btns">
       <a href="tel:047-161-3534" class="btn-cta primary">南柏店に電話する<br><span style="font-size:0.8em;letter-spacing:0.1em;">047-161-3534</span></a>
       <a href="tel:04-7197-1775" class="btn-cta primary">CALMに電話する<br><span style="font-size:0.8em;letter-spacing:0.1em;">04-7197-1775</span></a>
+      <a href="https://lin.ee/7a1kuxn" target="_blank" class="btn-line">
+        <img src="photo/line.png" alt="LINE">LINE で応募・問い合わせ
+      </a>
     </div>
   </div>
 </div>
 
 </main>
+
+<!-- 固定LINEボタン（求人用） -->
+<div class="line-float">
+  <a href="https://lin.ee/7a1kuxn" target="_blank" aria-label="LINEで応募・問い合わせ">
+    <img src="photo/line.png" alt="求人受付LINE">
+  </a>
+  <span class="line-float-label">応募LINE</span>
+</div>
 
 <!-- FOOTER -->
 <footer>
